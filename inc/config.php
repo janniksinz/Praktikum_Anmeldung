@@ -9,9 +9,9 @@
         
     /*Config down here*/
         
+        /*Include DB.php file*/
         
-        
-        
+    include_once "classes/db.php";
         
         
         
