@@ -4,7 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset=utf-8>
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta charset=utf-8>
+    <meta name="robots" content="follow">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>GymPraktika Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -47,7 +55,7 @@
     <section class="section section1 section-light" id="info">
         <h2>Infos</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque debitis id earum pariatur. Sunt placeat quibusdam iure rerum nisi quas, deserunt doloribus expedita. Temporibus nam molestiae sint voluptate eius dolorum eum aspernatur fuga delectus numquam sit amet, maiores consequatur aut molestias laudantium voluptatum esse, asperiores qui ratione reprehenderit ducimus? Illum deserunt minima quisquam aliquid obcaecati quia atque placeat. Harum voluptatum, fuga ratione dolor expedita repellendus accusamus vero eos odio. Molestiae saepe sed quia quasi corrupti, quo optio architecto culpa.</p>
-        <a href="login.php">Login</a>
+       <!-- <a href="login.php">Login</a>-->
     </section>
     
     <!--next Parallax Image-->
@@ -99,6 +107,18 @@
     </div>
 
     -------------------->
+    
+    <section class="section section-dark">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam delectus a necessitatibus, impedit, unde nobis ratione atque consequuntur sit voluptatibus.
+    </section>
+    
+    
+    
+    
+    
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 
 </body>
 
