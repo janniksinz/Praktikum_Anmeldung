@@ -1,10 +1,20 @@
 
            
 <?php
-    
+    /*Allow the Config*/
+    define('__CONFIG__', true);
+    /*Require the Config*/
+    require_once "inc/config.php";
     
 ?>
-          
+
+
+<head>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+</head>
+
+                    
+<body>      
            <div class="uk-section uk-container uk-text-left">
             <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
                 
@@ -35,3 +45,33 @@
                 
             </div>
         </div>
+    
+<?php
+    include_once "inc/footer.php";
+    ?>
+    
+
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
