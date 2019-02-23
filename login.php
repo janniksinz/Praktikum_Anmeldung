@@ -120,19 +120,19 @@
             <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
                 
                 <!--Form-->       
-                        <form class="uk-form-stacked">
+                        <form class="uk-form-stacked js.login" method="get">
                             <!--Email Holder-->
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="form-stacked-text">Email</label>
                                 <div class="uk-form-controls input_form">
-                                    <input class="uk-input" id="form-stacked-text" type="email" placeholder="email@email.com">
+                                    <input class="uk-input" id="form-stacked-text" type="email" required="required" placeholder="email@email.com">
                                 </div>
                             </div>
                             <!--Password Holder-->
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="form-stacked-text">Passord</label>
                                 <div class="uk-form-controls input_form">
-                                    <input class="uk-input" id="form-stacked-text" type="password" placeholder="Your Password">
+                                    <input class="uk-input" id="form-stacked-text" type="password" required="required" placeholder="Your Password">
                                 </div>
                             </div>
                             <!--Submit Button-->
@@ -143,6 +143,7 @@
                             </div>
 
                         </form>
+                        <a href="register.php">Register</a>
                 
             </div>
         </div>
