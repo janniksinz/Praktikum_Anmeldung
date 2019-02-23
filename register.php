@@ -11,6 +11,7 @@
 
 <head>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+          <title>GymRegister</title>
 </head>
 
                     
@@ -20,6 +21,8 @@
                 
                 <!--Form-->       
                         <form class="uk-form-stacked js.login" method="get">
+                            <h2>Register</h2><a href="login.php">Login</a>
+                            
                             <!--Email Holder-->
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="form-stacked-text">Email</label>
