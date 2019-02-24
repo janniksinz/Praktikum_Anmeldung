@@ -9,14 +9,15 @@
         
     /*Config down here*/
         
-        /*Include DB.php file*/
-        
-    include_once "classes/db.php";
-        
-        
-        
-        
-        
-        
+/*----------------------------------------------------------*/
+
+    /*Include DB.php file*/
+    include_once "classes/DB.php";
+    
+    
+    $con = DB::getConnection();
+         
+
+
         
 ?>
