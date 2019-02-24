@@ -10,8 +10,12 @@
 
 
 <head>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-          <title>GymRegister</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link rel="stylesheet" href="Assets/style/style.css">
+
+    <title>GymRegister</title>
+    
 </head>
 
                     
@@ -20,7 +24,7 @@
             <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
                 
                 <!--Form-->       
-                        <form class="uk-form-stacked js.login" method="get">
+                        <form class="uk-form-stacked js.register" method="get">
                             <h2>Register</h2><a href="login.php">Login</a>
                             
                             <!--Email Holder-->

@@ -10,8 +10,12 @@
 
 
 <head>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-          <title>GymLogin</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link rel="stylesheet" href="Assets/style/style.css">
+
+    <title>GymLogin</title>
+    
 </head>
 
                     
