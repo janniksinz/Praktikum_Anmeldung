@@ -226,7 +226,7 @@ nav a:hover{
 
 
 
-/*Parallax Content Start*/
+/*--------------------------Parallax Content Start--------------------------*/
 
 body,html{
     margin: 0;
@@ -246,13 +246,13 @@ body,html{
 }
 
 .pimg1{
-    background-image: url(Bilder/kamera.jpg);
+    background-image: url(Assets/Bilder/kamera.jpg);
     min-height: 110%;
    
 }
 
 .pimg2{
-    background-image: url(Bilder/laptop.jpg);
+    background-image: url(Assets/Bilder/laptop.jpg);
     min-height: 40em;
     
     
@@ -260,7 +260,7 @@ body,html{
 }
 
 .pimg3{
-    background-image: url(Bilder/working.jpg);
+    background-image: url(Assets/Bilder/working.jpg);
     min-height:60em;
 }
 
