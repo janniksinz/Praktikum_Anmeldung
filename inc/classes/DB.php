@@ -29,11 +29,11 @@ class DB {
     */
 class DB{
     
-    public $servername;
-    public $username;
-    public $password;
-    public $dbname;
-    public $charset;
+    private $servername;
+    private $username;
+    private $password;
+    private $dbname;
+    private $charset;
     
             public static function connectDB() {
                 $servername = "localhost";
