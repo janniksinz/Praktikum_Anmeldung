@@ -27,13 +27,38 @@ class DB {
 		return self::$con;
 	}
     */
+class DB{
     
-    public static function getdbconnection() {
-        $mysqli = new mysqli("localhost", "admin", "admin","praktika");
-        return self::$mysqli;
-    }
+    public $servername;
+    public $username;
+    public $password;
+    public $dbname;
+    public $charset;
+    
+            public static function connectDB() {
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "praktika";
+                $charset= "utf8mb4"; /* -ci ??*/
+          try{
+              
+            $dsn = "mysql:host=".$servername.";dbname=".$dbname.";charset=".$charset;    
+            $pdo = new PDO($dsn, $username, $password);
+              
+              $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+              
+            return $pdo; 
+              
+          }catch (\Exception $e){
+            echo 'Connection failed: '.$e->getMessage();  
+          }    
+               
+                
+            }
+        }   
    
-}
+
 
 ?>
 
