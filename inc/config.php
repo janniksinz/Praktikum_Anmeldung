@@ -14,8 +14,9 @@
     /*Include DB.php file*/
     include_once "classes/DB.php";
     
+    $object = new DB;
+    $object->connectDB();
     
-    $con = DB::getConnection();
          
 
 
