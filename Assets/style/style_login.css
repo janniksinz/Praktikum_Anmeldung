@@ -1,0 +1,17 @@
+.form-submit{
+    display: grid;
+}
+
+.form{
+    margin-right: 2em;
+    margin-left: 0em;
+    padding: 0;
+    grid-row: 2/4;
+    grid-row: 0/2;
+    position: relative;
+    top: 2em;
+}
+
+section a{
+    
+}

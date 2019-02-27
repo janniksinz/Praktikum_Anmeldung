@@ -1,7 +1,7 @@
 @import url();
 
 :root{
-    --background:rgba(175,62,11,.5); /*Setting standart Color Theme*/
+    --background:rgba(175,62,11,.7); /*Setting standart Color Theme*/
     --background1:rgba(175,141,11,.7); /*Setting standart Color Theme*/
     --background2:rgba(7,188,76,.7); /*Setting standart Color Theme*/
     --background3:rgba(36,22,121,.7); /*Setting standart 3Color Theme*/
@@ -32,6 +32,7 @@ body{
 
 header{
     background: var(--background);
+    opacity: 1;
     text-align: center;
     position: fixed;/*always staying on top*/
     z-index: 999;/*always staying on top*/
@@ -42,9 +43,26 @@ header{
     border-radius: .5em;
     
 }
+header h1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+header h1 a:hover{
+    text-decoration: none;
+    color: #000;
+    font-family: serif;
+}
+
+header nav ul li{
+    text-decoration: none;
+}
+headder nav ul li:hover{
+    text-decoration: none;
+}
 
 .logo{
-    
+    text-decoration: none;
     margin:0;
     padding: 0;
     font-family: serif;
@@ -104,7 +122,7 @@ nav{
     background: var(--background);
     width: 100%;
     /*Scaling the nav in*/
-    transform: scale(1,0); /*Transform zu 0% Höhe*/
+    transform: scale(.995,0); /*Transform zu 0% Höhe*/
     transform-origin: top;
     transition: transform 400ms ease-in-out;
 }
@@ -143,7 +161,8 @@ nav a:hover{
 }
 
 .nav-toggle:checked ~ nav{
-    transform: scale(1,1); /*ergänzung des Fade-in zu 100%*/
+    transform: scale(.99,1); /*ergänzung des Fade-in zu 100%*/
+    
     
 }
 
@@ -253,13 +272,13 @@ body,html{
 }
 
 .pimg1{
-    background-image: url(/Praktikum_Anmeldung/Assets/Bilder/kamera.jpg);
+    background-image: url(../style/Bilder/kamera.jpg);
     min-height: 110%;
    
 }
 
 .pimg2{
-    background-image: url(/Praktikum_Anmeldung/Assets/Bilder/laptop.jpg);
+    background-image: url(../style/Bilder/laptop.jpg);
     min-height: 40em;
     
     
@@ -267,31 +286,32 @@ body,html{
 }
 
 .pimg3{
-    background-image: url(/Praktikum_Anmeldung/Assets/Bilder/working.jpg);
+    background-image: url(../style/Bilder/working.jpg);
     min-height:60em;
 }
 
 .section{
+    display: grid;
     text-align: center;
     padding: 20px 80px 50px;
     opacity: .86;
     
 }
 
-.section-light{
+.section-bg1{
     
     background-color: var(--background1);
     border-top: 1px solid var(--background1);
     border-bottom: 1px solid var(--background1);
 }
 
-.section-dark{
+.section-bg2{
     background-color: var(--background2);
     border-top: 1px solid var(--background2);
     border-bottom: 1px solid var(--background2);
 }
 
-.section-3{
+.section-bg3{
     background-color: var(--background3);
     border-top: 1px solid var(--background3);
     border-bottom: 1px solid var(--background3);
@@ -317,11 +337,11 @@ body,html{
 }
 
 .ptext .border{
-    background-color: #111;
+    background-color: var(--background);
     color: #fff;
     padding: .7em;
     border-radius: .7em;
-    opacity: .6;
+    opacity: .8;
 }
 
 .ptext .border.trans{ /*Für den Fall, das bestimmte Bereiche über den Texten ausgeblendet werden müssen*/
@@ -335,7 +355,7 @@ body,html{
         background-attachment: scroll;
     }
     .pimg3{
-        background:url(Bilder/working.jpg)400;
+        background:url(/Praktikum_Anmeldung/Assets/style/Bilder/working.jpg)400;
         min-height: 100%;
         background-position: center;
     }
@@ -344,21 +364,42 @@ body,html{
 
 /*Grid für Anmeldebutton*/
 
-.section1{
+.section1
+{
+    display: grid;
+    grid-template-columns: .2fr .3fr 2fr .5fr;
+}
+.section2
+{
+    display: grid;
+    grid-template-columns: .2fr .3fr 2fr .5fr;
+}
+.section3
+{
     display: grid;
     grid-template-columns: .2fr .3fr 2fr .5fr;
 }
 
-.section1 h2{
+.section h2
+{
+    font-weight: 600;
     grid-column: 2/4;
     grid-row: 1/2;
 }
-.section1 p{
+
+.section p
+{
+    color: #000;
+    opacity: 1;
+    font-weight: 600;
     grid-column: 2/4;
     grid-row: 2/3;
+    text-align: justify;
+    letter-spacing:.005em;
 }
 
-.section a{
+.section a
+{
     /*Position*/
     grid-column: 4/5;
     grid-row: 2/3;
@@ -366,6 +407,8 @@ body,html{
     position:relative;
     bottom: 2em;
     /*Style*/
+    min-width: 4.5em;
+    color: #000;
     border: var(--background) solid 2px;
     background: var(--background);
     border-radius: 2em;
@@ -378,13 +421,11 @@ body,html{
     margin-right: 20%;
     
 }
-.section a:hover{
+.section a:hover
+{
     background: var(--background2);
 }
 /*Ende Grid für Anmeldebutton*/
-
-
-
 
 
 

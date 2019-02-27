@@ -1,9 +1,0 @@
-.input_form{
-    min-width: 500px;
-}
-
-@media screen and (max-width: 687px){
-    .input_form{
-        min-width: 200px;;
-    }
-}
