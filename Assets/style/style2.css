@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+:root{
+    --background:rgba(175,62,11,.7); /*Setting standart Color Theme*/
+    --background1:rgba(175,141,11,.7); /*Setting standart Color Theme*/
+    --background2:rgba(7,188,76,.7); /*Setting standart Color Theme*/
+    --background3:rgba(36,22,121,.7); /*Setting standart 3Color Theme*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--background);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.container
+{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header
+{
+    background: #e54b4b;
+    color: #ebebd3;
+    padding: 1em 0;
+    position: relative;
+}
+header::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+.logo
+{
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo span
+{
+    font-weight: 400;
+}
+.site-nav
+{
+    position: absolute;
+    background: #464655;
+    top: 100%;
+    right: 0%;
+}
+.site-nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li
+{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child
+{
+    border: none;
+}
+.site-nav a
+{
+    display: block;
+    padding: 2em ;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    color: #ebebd3;
+    
+}
+.site-nav a:hover,
+.site-nav a:focus
+{
+    background: #e4b363;
+    color: #464655;
+}
+
+/*Hamburger*/
+
+.toggle
+{
+    padding: 1em;
+    position: absolute;
+    right: .5em;
+    top:.5em;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::after,
+.hamburger::before
+{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;    
+}
+
+.hamburger::before
+{
+    transform: translateY(-6px);
+}
+
+.hamburger::after
+{
+    transform: translateY(3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

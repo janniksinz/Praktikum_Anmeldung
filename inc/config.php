@@ -5,6 +5,7 @@
         exit('You do not have a config file');
     }    
 
+    define('__ALLOW HEADER__', true);
     define('__ALLOW_FOOTER__', true);
         
     /*Config down here*/

@@ -1,51 +1,13 @@
-<!DOCTYPE html>
-<html lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymPraktika</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="Assets/style/style.css">
-    
-</head>
-
-<body>
-    
-    <!--  Navbar on Top  -->
-   <header>
-       <h1 class="logo">
-          <a href="index.html">
-          Praktikumsanmeldung Gymnossen</a>
-       </h1>
-            
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-       
-       <nav class="">
-           <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="#info">Infos</a></li>
-               <li><a href="signin.php">Anmelden</a></li>
-               <li class="libottom"><a href="#">ehemalige Praktika</a></li>              
-           </ul>
-       </nav>    
-       <label for="nav-toggle"  class="nav-toggle-label">
-           <span></span>
-          </label>
-   </header>
-   
-   <!-- Parallax Content -->
-   
     <div class="pimg1">
         <div class="ptext">
-            <span class="border">
+            <span class="border" id="info">
                 Praktikumsanmeldung
             </span>
         </div>
     </div>
     
     
-    <section class="section section1 section-bg1" id="info">
+    <section class="section section1 section-bg1">
         <h2>Infos</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque debitis id earum pariatur. Sunt placeat quibusdam iure rerum nisi quas, deserunt doloribus expedita. Temporibus nam molestiae sint voluptate eius dolorum eum aspernatur fuga delectus numquam sit amet, maiores consequatur aut molestias laudantium voluptatum esse, asperiores qui ratione reprehenderit ducimus? Illum deserunt minima quisquam aliquid obcaecati quia atque placeat. Harum voluptatum, fuga ratione dolor expedita repellendus accusamus vero eos odio. Molestiae saepe sed quia quasi corrupti, quo optio architecto culpa.</p>
         <a href="login.php">Login</a>
@@ -92,9 +54,3 @@
             <span></span>
         </div>
     </div>
-
-
-
-</body>
-
-</html>

@@ -1,4 +1,7 @@
-@import url();
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 :root{
     --background:rgba(175,62,11,.7); /*Setting standart Color Theme*/
@@ -177,10 +180,10 @@ nav a:hover{
 
 
 /**/
-/*For big screens*/
+/*For BIG screens*/
 /**/
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1200px) {
     
     .nav-toggle-label{
         display: none;
