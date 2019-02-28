@@ -54,7 +54,7 @@
     
     </div>        
     
-    <a href="register.php" class="form-submit">Signup</a>
+    <a href="signup.php" class="form-submit">Signup</a>
 </section>
     
     

@@ -19,12 +19,12 @@
 
 <body>
 
-Navbar on Top
+
    <?php
 include_once "inc/header.php";
 include_once "inc/mainstructure.php";
 //include "assets/js/style.js"
-    include_once "footer.php";
+//include_once "footer.php";
     
 ?>
  
