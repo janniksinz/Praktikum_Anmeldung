@@ -9,7 +9,7 @@
     
     <section class="section section1 section-bg1">
         <h2>Infos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque debitis id earum pariatur. Sunt placeat quibusdam iure rerum nisi quas, deserunt doloribus expedita. Temporibus nam molestiae sint voluptate eius dolorum eum aspernatur fuga delectus numquam sit amet, maiores consequatur aut molestias laudantium voluptatum esse, asperiores qui ratione reprehenderit ducimus? Illum deserunt minima quisquam aliquid obcaecati quia atque placeat. Harum voluptatum, fuga ratione dolor expedita repellendus accusamus vero eos odio. Molestiae saepe sed quia quasi corrupti, quo optio architecto culpa.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo voluptates doloribus provident cum quae officia debitis suscipit, culpa accusamus odio iure error quam doloremque voluptatibus ab a quia officiis similique deleniti omnis! Totam labore nulla obcaecati pariatur esse facere doloremque, quod aperiam fugiat inventore dolorum repellat velit voluptate. Dolorem facere, ratione? Totam debitis illum commodi minima ipsam laboriosam expedita voluptates placeat reprehenderit dolorem harum sed dolore, in reiciendis officia quas amet suscipit maxime tempora ullam unde iure. Ullam exercitationem ea consectetur optio omnis aliquid repellendus nesciunt maxime eveniet ipsa error accusantium excepturi dolore, voluptatum facere tempora quo explicabo? Vero.</p>
         <a href="login.php">Login</a>
     </section>
     
@@ -24,7 +24,7 @@
     </div>
         
     <section class="section section2 section-bg2">
-        <h2>Darauf solltest du beachten:</h2>
+        <h2>Darauf solltest du achten:</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eius harum, ullam ut nisi illo assumenda quibusdam eaque esse adipisci aut maiores. Itaque eveniet ea, laudantium impedit qui explicabo reprehenderit.</p>
     </section>    
     

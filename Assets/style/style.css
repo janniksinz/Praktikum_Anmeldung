@@ -393,7 +393,7 @@ body,html{
     grid-column: 2/4;
     grid-row: 2/3;
     text-align: justify;
-    letter-spacing:.005em;
+    letter-spacing:.006em;
 }
 
 .section a
