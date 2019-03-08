@@ -1,3 +1,3 @@
 #Anmeldung Repository
 
-This is the Repo for a SQL Login Site for Gymnossen
+This is the Repo for a PHP Login Site for Gymnossen
