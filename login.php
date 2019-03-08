@@ -30,10 +30,10 @@
     <div class="pimg1">
         <div class="ptext">
             
-                <form action="" method="post" class="border">
+                <form action="assets/login.inc.php" method="post" class="border">
                     <input type="email" name="email" id="email" placeholder="Your Email:">
-                    <input type="password" name="password" id="" placeholder="Your password:">
-                    <button type="submit">Login</button>
+                    <input type="password" name="password" id="pw" placeholder="Your password:">
+                    <button type="login-submit">Login</button>
                 </form>
             
         </div>
@@ -44,15 +44,17 @@
     <h2>Infos</h2>
    <!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque debitis id earum pariatur. Sunt placeat quibusdam iure rerum nisi quas, deserunt doloribus expedita. Temporibus nam molestiae sint voluptate eius dolorum eum aspernatur fuga delectus numquam sit amet, maiores consequatur aut molestias laudantium voluptatum esse, asperiores qui ratione reprehenderit ducimus? Illum deserunt minima quisquam aliquid obcaecati quia atque placeat. Harum voluptatum, fuga ratione dolor expedita repellendus accusamus vero eos odio. Molestiae saepe sed quia quasi corrupti, quo optio architecto culpa.</p> -->
     
-    <div class="form">  
+   <!-- 
+        <div class="form">  
 
-                <form action="assets/login.inc.php " method="POST">
-                    <input type="email" name="email" id="email" placeholder="Your Email:">
-                    <input type="password" name="pw" id="pw" placeholder="Your Password:">
-                    <button type="submit" name="login-submit">Login</button>
-                </form>
+        <form action="assets/login.inc.php " method="POST"
+                <input type="email" name="email" id="email" placeholder="Your Email:">
+                <input type="password" name="pw" id="pw" placeholder="Your Password:" maxlength="20">
+                <button type="submit" name="login-submit">Login</button>
+        </form>
     
-    </div>        
+    </div>  
+     -->     
     
     <a href="signup.php" class="form-submit">Signup</a>
 </section>

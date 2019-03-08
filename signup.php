@@ -32,8 +32,8 @@
         <div class="ptext">
                 <form action="" method="post" class="border">
                     <input type="email" name="email" id="email" placeholder="Your Email:">
-                    <input type="password" name="password" id="" placeholder="Your Password:">
-                    <input type="password" name="password2" id="" placeholder="Repeat Password:">
+                    <input type="password" name="password" id="" placeholder="Your Password:" maxlength="20">
+                    <input type="password" name="password2" id="" placeholder="Repeat Password:" maxlength="20">
                     <button type="submit">Register</button>
                 </form>
         </div>
