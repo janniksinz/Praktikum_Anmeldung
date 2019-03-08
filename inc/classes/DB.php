@@ -53,10 +53,10 @@ class DB{
           }catch (\Exception $e){
             echo 'Connection failed: '.$e->getMessage();  
           }    
-               
+            
                 
-            }
-        }   
+                                                }//End of Private Function connectDB       
+}//End of Class   
    
 
 

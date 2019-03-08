@@ -32,10 +32,23 @@
             
                 <form action="assets/login.inc.php" method="post" class="border">
                     <input type="email" name="email" id="email" placeholder="Your Email:">
-                    <input type="password" name="password" id="pw" placeholder="Your password:">
-                    <button type="login-submit">Login</button>
+                    <input type="password" name="pw" id="pw" placeholder="Your password:">
+                    <button type="login-submit" name="login-submit">Login</button>
                 </form>
-            
+                <!--
+                <?php
+                    /*if (ISSET($POST['login-submit']))
+                    {
+                        $email = $_POST['email'];
+                        $pw = $_POST['pw'];
+                        
+                        echo $pw;
+                        echo $email;
+                    
+                    }
+                    */
+                ?>
+                -->
         </div>
     </div>
     
