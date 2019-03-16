@@ -25,14 +25,16 @@
         include_once "inc/Header.php";
     ?>
    
-   <!-- Parallax Content -->
+   <!-- Parallax Content --> 
    
     <div class="pimg1">
         <div class="ptext">
             
-                <form action="assets/login.inc.php" method="post" class="border">
-                    <input type="email" name="email" id="email" placeholder="Your Email:">
-                    <input type="password" name="pw" id="pw" placeholder="Your password:">
+                <form action="Assets/validation.php" method="post" class="border">
+                    <label>Username:</label><br>
+                    <input type="email" name="email" id="email"  class="insert" placeholder="Your Email:"><br>
+                    <label>Password:</label><br>
+                    <input type="password" name="pw" id="pw" class="insert" placeholder="Your password:"><br><br>
                     <button type="login-submit" name="login-submit">Login</button>
                 </form>
                 <!--
@@ -52,11 +54,11 @@
         </div>
     </div>
     
-    
+<!--    
 <section class="section section1 section-bg1" id="info">
     <h2>Infos</h2>
    <!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque debitis id earum pariatur. Sunt placeat quibusdam iure rerum nisi quas, deserunt doloribus expedita. Temporibus nam molestiae sint voluptate eius dolorum eum aspernatur fuga delectus numquam sit amet, maiores consequatur aut molestias laudantium voluptatum esse, asperiores qui ratione reprehenderit ducimus? Illum deserunt minima quisquam aliquid obcaecati quia atque placeat. Harum voluptatum, fuga ratione dolor expedita repellendus accusamus vero eos odio. Molestiae saepe sed quia quasi corrupti, quo optio architecto culpa.</p> -->
-    
+    -->
    <!-- 
         <div class="form">  
 
@@ -69,8 +71,11 @@
     </div>  
      -->     
     
-    <a href="signup.php" class="form-submit">Signup</a>
-</section>
+    <a href="signup.php" class="form-submit">Admin</a>
+    
+    
+<!--</section>
+-->
     
     
     

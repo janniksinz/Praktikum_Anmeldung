@@ -14,13 +14,13 @@
 
     /*Include DB.php file*/
     include_once "classes/DB.php";
-    
+    $object = NULL;
     $object = new DB;
     $object->connectDB();
 
-    if ($object)
+    if ($object!==NULL)
     {
-        echo 'Verbindung steht';
+     $verbindung=true;
     }
 
    ?> 

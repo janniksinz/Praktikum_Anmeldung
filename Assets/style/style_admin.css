@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(Bilder/kamera.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.login-box
+{
+    max-width:  700px;
+    float: none;
+    margin: 150px auto;
+}
+
+.login-left
+{
+    background: rgba(211,211,211,.5);
+    padding: 30px;
+}
+
+.login-right
+{
+    background:#fff;
+    padding: 30px;
+}
+
+.form-control
+{
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
