@@ -13,8 +13,8 @@
                <li><a href="index.php">Home</a></li>
                <li><a href="#info">Infos</a></li>
                <li><a href="login.php">Anmelden</a></li>
-               <li><a href="signup.php">Signup</a></li>
                <li class="libottom"><a href="#">ehemalige Praktika</a></li>              
+               <li><a href="logout.php">Logout</a></li>
            </ul>
        </nav>    
        <label for="nav-toggle"  class="nav-toggle-label">

@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 :root{
     --background:rgba(175,62,11,.7); /*Setting standart Color Theme*/
     --background1:rgba(175,141,11,.7); /*Setting standart Color Theme*/
@@ -9,123 +5,347 @@
     --background3:rgba(36,22,121,.7); /*Setting standart 3Color Theme*/
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: var(--background);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 20px
+*, *::before, *::after{
+    box-sizing: border-box;
 }
 
-.container
-{
-    width: 95%;
-    max-width: 1000px;
-    margin: 0 auto;
+body{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    font-weight: 400;
+    background-size: cover;
+    height: auto;
 }
-header
-{
-    background: #e54b4b;
-    color: #ebebd3;
-    padding: 1em 0;
+
+
+.content{
+    height: 200vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items:center;
+}
+
+/*Navigation Bar---------------------------------------------------------*/
+
+header{
+    background: var(--background);
+    opacity: 1;
+    text-align: center;
+    position: relative;/*always staying on top*/
+    z-index: 999;/*always staying on top*/
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--background);
+    border-bottom:0;
+    border-radius: .5em;
+    
+}
+header h1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+header h1 a:hover{
+    text-decoration: none;
+    color: #000;
+    font-family: serif;
+}
+
+header nav ul li{
+    text-decoration: none;
+}
+headder nav ul li:hover{
+    text-decoration: none;
+}
+
+.logo{
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+    font-family: serif;
+}
+
+.nav-toggle{
+    display: none;
+    border: .2em solid var(--background);
+    
+}
+
+/*align it in the Top-Left-Center*/
+.nav-toggle-label{
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Pseudo Elements (Hamburger Toggle)*/
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
     position: relative;
 }
-header::after
-{
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
     content: '';
-    display: block;
-    clear: both;
-}
-.logo
-{
-    float: left;
-    font-size: 1rem;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.logo span
-{
-    font-weight: 400;
-}
-.site-nav
-{
     position: absolute;
-    background: #464655;
-    top: 100%;
-    right: 0%;
 }
-.site-nav ul
-{
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+/*End of Hamburger Toggle*/
+
+/*Move Nav down*/
+nav{
+    position: absolute;
+    top: 100%; /*100% down from the fixed header(logo)*/
+    text-align: left;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    /*Scaling the nav in*/
+    transform: scale(.995,0); /*Transform zu 0% Höhe*/
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.site-nav li
-{
-    border-bottom: 1px solid #575766;
+
+nav li{
+    margin-top:1em;
+    margin-left: 1em;
 }
-.site-nav li:last-child
-{
-    border: none;
+.libottom{
+    margin-bottom: 1em;
 }
-.site-nav a
-{
-    display: block;
-    padding: 2em ;
-    text-transform: uppercase;
-    color: #fff;
+
+nav a{
+    color:#fff;
     text-decoration: none;
-    color: #ebebd3;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+    /*Fade in the links by opening the nav*/
+    opacity: 0;
+    transition: opacity 125ms ease-in-out; /*delay by 250ms*/
+}
+
+nav a:hover{
+    color: #000;
+    background-color: rgba(0,0,0,.1);
+    margin-left: .5em;
+    transition-delay: .3s;
+    transition: 2s;
+}
+
+.nav-toggle:checked ~ nav{
+    transform: scale(.99,1); /*ergänzung des Fade-in zu 100%*/
+    
     
 }
-.site-nav a:hover,
-.site-nav a:focus
-{
-    background: #e4b363;
-    color: #464655;
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 
-/*Hamburger*/
 
-.toggle
-{
-    padding: 1em;
+
+
+
+
+/**/
+/*For BIG screens*/
+/**/
+
+@media screen and (min-width:1200px) {
+    
+    .nav-toggle-label{
+        display: none;
+    }
+    
+    header{
+        display: grid;
+        /*4 colums (1,auto,600px,1) die 2. ist für das Logo*/
+        grid-template-columns: .8fr auto minmax(600px,3fr) .8fr;
+        
+    }
+
+    .logo{
+        grid-column: 2 / 3;
+    }
+    
+    nav{
+        all: unset; /*undo all before*/
+        grid-column: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav ul{
+        display: flex;
+    }
+    
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+        
+    }
+    
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+    nav a:hover{
+        margin:0;
+        padding: 0;
+        
+    }
+    
+    nav a::before{
+        /*Hover Effekt (Black Bar)*/
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top:-.5em;
+        left: 0;
+        right: 0;
+        
+        transform: scale(0,1);
+        transition: transform ease-in-out 250ms;
+    }
+    
+    nav a:hover::before{
+        transform: scale(1,1);
+        transition: transform ease-in-out 250ms;
+    }
+    
+    
+    
+} /*End of Media Querry------------------------------End of Navbar-----------*/
+
+
+
+/*--------------------------Parallax Content Start--------------------------*/
+
+body,html{
+    margin: 0;
+    height:100%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pimg1,.pimg2,.pimg3{
+    position: relative;
+    opacity: .70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-attachment:fixed;
+}
+
+.pimg1{
+    background-image: url(../style/Bilder/kamera.jpg);
+    min-height: 110%;
+   
+}
+
+.pimg2{
+    background-image: url(../style/Bilder/laptop.jpg);
+    min-height: 40em;
+    
+    
+    
+}
+
+.pimg3{
+    background-image: url(../style/Bilder/working.jpg);
+    min-height:60em;
+}
+
+.section{
+    display: grid;
+    text-align: center;
+    padding: 20px 80px 50px;
+    opacity: .86;
+    
+}
+
+.section-bg1{
+    
+    background-color: var(--background1);
+    border-top: 1px solid var(--background1);
+    border-bottom: 1px solid var(--background1);
+}
+
+.section-bg2{
+    background-color: var(--background2);
+    border-top: 1px solid var(--background2);
+    border-bottom: 1px solid var(--background2);
+}
+
+.section-bg3{
+    background-color: var(--background3);
+    border-top: 1px solid var(--background3);
+    border-bottom: 1px solid var(--background3);
+}
+
+/*ptext*/
+
+.ptext{
     position: absolute;
-    right: .5em;
-    top:.5em;
-    cursor: pointer;
+    top: 50%;
+    width: 100%;
+    text-align:center;
+    color: #000;
+    font-size: 2em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    
 }
 
-.hamburger,
-.hamburger::after,
-.hamburger::before
-{
-    content: '';
-    display: block;
-    background: #ebebd3;
-    height: 3px;
-    width: 1.75em;
-    border-radius: 3px;    
+.ptext1{
+    position: absolute;
+    top: 90%;
 }
 
-.hamburger::before
-{
-    transform: translateY(-6px);
+.ptext .border{
+    background-color: var(--background);
+    color: #fff;
+    padding: .7em;
+    border-radius: .7em;
+    opacity: .8;
 }
 
-.hamburger::after
-{
-    transform: translateY(3px);
+.ptext .border.trans{ /*Für den Fall, das bestimmte Bereiche über den Texten ausgeblendet werden müssen*/
+    background-color: transparent;
 }
-
-
-
-
-
 
 
 
