@@ -45,7 +45,7 @@
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" name="pw" id="pw" class="form-control" required>
+                        <input type="password" name="pw" id="pw" class="form-control" minlength="8" required>
                     </div>
                     <button type="submit" class="btn btn-primary"> Registrieren </button>
                 </form>
