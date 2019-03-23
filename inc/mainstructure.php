@@ -9,7 +9,7 @@
     
     <section class="section section1 section-bg1">
         <h2>Infos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo voluptates doloribus provident cum quae officia debitis suscipit, culpa accusamus odio iure error quam doloremque voluptatibus ab a quia officiis similique deleniti omnis! Totam labore nulla obcaecati pariatur esse facere doloremque, quod aperiam fugiat inventore dolorum repellat velit voluptate. Dolorem facere, ratione? Totam debitis illum commodi minima ipsam laboriosam expedita voluptates placeat reprehenderit dolorem harum sed dolore, in reiciendis officia quas amet suscipit maxime tempora ullam unde iure. Ullam exercitationem ea consectetur optio omnis aliquid repellendus nesciunt maxime eveniet ipsa error accusantium excepturi dolore, voluptatum facere tempora quo explicabo? Vero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, neque, et? Provident, architecto, nesciunt qui ducimus eveniet cum labore reiciendis ipsa accusantium distinctio, quasi fuga unde laboriosam fugiat repellat blanditiis sunt nemo quod a, vitae sint esse autem voluptatum consequuntur inventore. Perspiciatis repudiandae nobis, officia eius dolore odio veniam dolorem sunt soluta deleniti eveniet modi expedita, reiciendis, cupiditate? Inventore, corrupti incidunt saepe officiis fuga illo, eaque voluptatum voluptatem vel. Quas reiciendis quasi voluptatem veniam obcaecati illum illo voluptatibus asperiores rem!</p>
         <a href="login.php">Login</a>
     </section>
     

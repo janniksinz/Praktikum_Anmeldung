@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Site</title>
-    <link rel="stylesheet" href="Assets/style/style_admin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/style/style2.css">
 </head>

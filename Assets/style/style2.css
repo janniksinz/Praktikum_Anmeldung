@@ -4,36 +4,30 @@
     --background2:rgba(7,188,76,.7); /*Setting standart Color Theme*/
     --background3:rgba(36,22,121,.7); /*Setting standart 3Color Theme*/
 }
-
 *, *::before, *::after{
     box-sizing: border-box;
 }
-
 body{
     margin: 0;
     padding: 0;
+    background: #fff;
     font-family:cursive;
     font-weight: 400;
+    background: url(Bilder/kamera.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: auto;
 }
-
-
-.content{
-    height: 200vh;
-    background-blend-mode: multiply;
-    background-size: cover;
-    display: grid;
-    place-items:center;
+.insert
+{
+    display: none;
 }
-
-/*Navigation Bar---------------------------------------------------------*/
-
 header{
     background: var(--background);
     opacity: 1;
     text-align: center;
-    position: relative;/*always staying on top*/
+    position: fixed;/*always staying on top*/
     z-index: 999;/*always staying on top*/
     width: 100%;
     height: auto;
@@ -46,20 +40,17 @@ header h1 a{
     text-decoration: none;
     color: #000;
 }
-
 header h1 a:hover{
     text-decoration: none;
     color: #000;
     font-family: serif;
 }
-
 header nav ul li{
     text-decoration: none;
 }
 headder nav ul li:hover{
     text-decoration: none;
 }
-
 .logo{
     text-decoration: none;
     margin:0;
@@ -72,8 +63,6 @@ headder nav ul li:hover{
     border: .2em solid var(--background);
     
 }
-
-/*align it in the Top-Left-Center*/
 .nav-toggle-label{
     position: absolute;
     top:0;
@@ -84,7 +73,6 @@ headder nav ul li:hover{
     flex-direction: row;
     align-items: center;
 }
-
 /*Pseudo Elements (Hamburger Toggle)*/
 .nav-toggle-label span,
 .nav-toggle-label span::before,
@@ -96,7 +84,6 @@ headder nav ul li:hover{
     border-radius: 2px;
     position: relative;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after{
     content: '';
@@ -106,12 +93,10 @@ headder nav ul li:hover{
 .nav-toggle-label span::before{
     bottom: 7px;
 }
-
 .nav-toggle-label span::after{
     top: 7px;
 }
 /*End of Hamburger Toggle*/
-
 /*Move Nav down*/
 nav{
     position: absolute;
@@ -125,7 +110,6 @@ nav{
     transform-origin: top;
     transition: transform 400ms ease-in-out;
 }
-
 nav ul{
     margin: 0;
     padding: 0;
@@ -150,7 +134,6 @@ nav a{
     opacity: 0;
     transition: opacity 125ms ease-in-out; /*delay by 250ms*/
 }
-
 nav a:hover{
     color: #000;
     background-color: rgba(0,0,0,.1);
@@ -169,11 +152,6 @@ nav a:hover{
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
-
-
-
-
-
 
 /**/
 /*For BIG screens*/
@@ -249,17 +227,12 @@ nav a:hover{
     
 } /*End of Media Querry------------------------------End of Navbar-----------*/
 
-
-
-/*--------------------------Parallax Content Start--------------------------*/
-
 body,html{
     margin: 0;
     height:100%;
     font-size: 16px;
     font-weight: 400;
 }
-
 .pimg1,.pimg2,.pimg3{
     position: relative;
     opacity: .70;
@@ -346,6 +319,59 @@ body,html{
 .ptext .border.trans{ /*Für den Fall, das bestimmte Bereiche über den Texten ausgeblendet werden müssen*/
     background-color: transparent;
 }
+
+/*No Parallax for small devices*/
+
+@media (max-width:1024px){
+    .pimg1,.pimg2,.pimg3{
+        background-attachment: fixed;
+        
+    }
+    .pimg3{
+        background:url(/Praktikum_Anmeldung/Assets/style/Bilder/working.jpg)400;
+        min-height: 100%;
+        background-position: center;
+    }
+}
+/*Ende Media Querry-----------------------------End of Parallax-------------*/
+
+
+/* --------------------Loginbox---------------------- */
+
+
+.container
+{
+    position: absolute;
+    top: 20%;
+    align-self: center;
+    align-content: center;
+    
+}
+
+
+
+.login-left
+{
+    background: rgba(211,211,211,.5);
+    padding: 30px;
+}
+
+.login-right
+{
+    background:#fff;
+    padding: 30px;
+}
+
+.admin-link {
+    position: fixed;
+    top:20em;
+    display: none;
+}
+
+
+
+
+
 
 
 

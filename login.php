@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Site</title>
-    <link rel="stylesheet" href="Assets/style/style_admin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/style/style2.css">
+    
 </head>
 <body>
    
    
    <!-- ----------------INCLUDE HEADER------------------- -->
-<?php include_once "inc/header.php"; ?>
+    <div><?php include_once "inc/header.php"; ?></div>
    <!-- ----------------INCLUDE HEADER------------------- -->
     <div class="container">
        <div class="login-box">
@@ -35,8 +35,8 @@
             </div>
         </div>
     </div>
-    <div>
-        <a href="admin.php">Admin</a>
+    <div id="admin-link">
+        <a href="admin.php" style="opacity:1;">Admin</a>
     </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background: url(Bilder/kamera.jpg);
@@ -6,51 +6,35 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    position: fixed;
+}
+
+.logout {
+    display: none;
 }
 
 
-.container
-{
+.container {
     height: 20em;
 }
 
-.login-box
-{
-    max-width:  700px;
+.login-box {
+    max-width: 700px;
     float: none;
     margin: 150px auto;
     height: 110vh;
 }
 
-.login-left
-{
-    background: rgba(211,211,211,.5);
+.login-left {
+    background: rgba(211, 211, 211, .5);
     padding: 30px;
 }
 
-.login-right
-{
-    background:#fff;
+.login-right {
+    background: #fff;
     padding: 30px;
 }
 
-.form-control
-{
+.form-control {
     background-color: transparent !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
