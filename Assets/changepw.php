@@ -19,14 +19,14 @@ if ($newpw1 == $newpw2)
 {
 $update = " UPDATE 'users' SET 'password' = '$newpw1' WHERE 'email' = '$email' ";
 header('location:submit.php');
-echo 'Password changed';
+alert ("Password changed");
 } else {   
 header('location:submit.php');
-echo 'Your Passwords are different';
+alert ("Your new passwords are different");
 }
     
 } else { /*oldpw does not fit to the actual pw*/
-   echo ' Your Password is incorrect. Please contact the Aministrator for a new Password';
+   alert ("Your password is incorrect. Please contact the Administrator for a new Password");
 }    
 
 ?>
