@@ -7,22 +7,31 @@ session_start();
 
 
 /*Connect to the DB*/
-$con = mysqli_connect('localhost', 'root', '');
-mysqli_select_db($con, 'praktika');
+$pdo = new PDO('mysql:host=localhost;dbname=praktika', 'root', '');
 
 /*get useremail and password from user*/
 $u_email = $_POST['email'];
 $u_pw    = $_POST['pw'];
 
-/*-----------Check for Admin----------*/
-$adminp = " SELECT password FROM users WHERE user_id = 1";
-$adminn = " SELECT email FROM users WHERE user_id = '1'";
+/*----------------Check for Admin-------------*/
+$s= "SELECT email, password FROM users";
+$_SESSION['admin'] = "Hallo";
 
-$_SESSION['adminn'] = $adminn;
-$_SESSION['adminp'] = $adminp;
-/*Querry those*/
-    $adminpw = mysqli_query($con, $adminp); 
-    $adminname = mysqli_query($con , $adminn);
+
+
+/*-----------Check for Admin----------*//*
+$adminp = " SELECT password FROM users WHERE user_id = 1";
+$adminn = " SELECT email FROM users WHERE user_id = 1";
+
+$arrayadmin = array('')
+
+/*Querry those*//*
+    $adminpw = $pdo->query($adminp); 
+    $adminname = $pdo->query($adminn);
+
+$_SESSION['test'] = $adminp;
+$_SESSION['adminemail'] = $adminname;
+$_SESSION['adminpw'] = $adminpw;
 
 if ($adminpw == $u_pw && $adminname == $u_email)
 {
@@ -31,15 +40,20 @@ if ($adminpw == $u_pw && $adminname == $u_email)
     exit();
 }
 
+*/
+//Try to find the Admin With IN UNNEST
+/*$adminquery = " SELECT email IN UNNEST [$_POST['email']]";*/
+
+
 
 
 /*Try to get the same user from the DB*/   
 $s = " SELECT * FROM users WHERE email = '$u_email' && password= '$u_pw'";
 
 /*give userdata to DB*/  
-$result = mysqli_query($con, $s);
+$result = $pdo->query($s);
+$num = $result->rowCount();
 
-$num = mysqli_num_rows($result);
 /*If email is already taken... output... / Else insert into users*/
 if ($num == 1)
 {

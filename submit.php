@@ -12,7 +12,6 @@
    <!-- ----------------INCLUDE HEADER------------------- -->
 <?php include_once "inc/header.php";
     session_start();
-    echo $_SESSION['adminn'];    
         ?>
    <!-- ----------------INCLUDE HEADER------------------- -->
     <div class="container">
@@ -31,12 +30,16 @@
                     
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" name="u_name" id="" class="form-control" required>
+                        <input type="text" name="u_name" id="" class="form-control" value="
+                        <?php echo $_SESSION["admin"]; ?> 
+                        " required>
                     </div>
                     
                     <div class="form-group">
                         <label>Vorname</label>
-                        <input type="text" name="u_vname" id="" class="form-control" required>
+                        <input type="text" name="u_vname" id="" class="form-control" value="
+                        <?php echo $_SESSION["test"]; ?> 
+                        " required>
                     </div>
                     
                     <div class="dropdown">

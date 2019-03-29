@@ -7,18 +7,19 @@
 *, *::before, *::after{
     box-sizing: border-box;
 }
-body{
+/*body{
     margin: 0;
     padding: 0;
     background: #fff;
     font-family:cursive;
     font-weight: 400;
     background: url(Bilder/kamera.jpg);
-    background-position: center;
+    background-attachment:fixed;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-}
+}*/
 .insert
 {
     display: none;
@@ -233,7 +234,7 @@ body,html{
     font-size: 16px;
     font-weight: 400;
 }
-.pimg1,.pimg2,.pimg3{
+/*.pimg1,.pimg2,.pimg3{
     position: relative;
     opacity: .70;
     background-position: center;
@@ -241,7 +242,7 @@ body,html{
     background-repeat: no-repeat;
     
     background-attachment:fixed;
-}
+}*/
 
 .pimg1{
     background-image: url(../style/Bilder/kamera.jpg);
@@ -331,6 +332,7 @@ body,html{
         background:url(/Praktikum_Anmeldung/Assets/style/Bilder/working.jpg)400;
         min-height: 100%;
         background-position: center;
+        background-attachment: fixed;
     }
 }
 /*Ende Media Querry-----------------------------End of Parallax-------------*/
