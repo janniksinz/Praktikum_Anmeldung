@@ -14,7 +14,7 @@ $u_email = $_POST['email'];
 $u_pw    = $_POST['pw'];
 
 /*----------------Check for Admin-------------*/
-$s= "SELECT email, password FROM users";
+$s= "SELECT 'email' FROM users WHERE user_id=1";
 $_SESSION['admin'] = "Hallo";
 
 
