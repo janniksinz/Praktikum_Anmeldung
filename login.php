@@ -36,7 +36,7 @@
         </div>
     </div>
     <div id="admin-link">
-        <a href="admin.php" style="opacity:1;">Admin</a>
+        <a href="admin.php" >Admin</a>
     </div>
 </body>
 </html>

@@ -24,22 +24,18 @@
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" id="email" class="form-control" value="
-                        <?php echo $_SESSION["username"]; ?> 
+                        <?php echo $_SESSION['username']; ?> 
                         " disabled>
                     </div>
                     
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" name="u_name" id="" class="form-control" value="
-                        <?php echo $_SESSION["admin"]; ?> 
-                        " required>
+                        <input type="text" name="u_name" id="" class="form-control"  required>
                     </div>
                     
                     <div class="form-group">
                         <label>Vorname</label>
-                        <input type="text" name="u_vname" id="" class="form-control" value="
-                        <?php echo $_SESSION["test"]; ?> 
-                        " required>
+                        <input type="text" name="u_vname" id="" class="form-control" required>
                     </div>
                     
                     <div class="dropdown">
