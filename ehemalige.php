@@ -15,12 +15,8 @@
     mysqli_select_db($con, 'praktika');
     $pdo = new PDO('mysql:host=localhost;dbname=praktika', 'root', '');
     
-    $ehemalige = " SELECT * FROM user";
         
-        foreach ($pdo->query($ehemalige) as &$row) {
-            echo $row['email']."<br>";
-            echo $row['password']."<br><br>";
-}
+
     
     ?>
     

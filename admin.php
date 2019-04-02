@@ -60,6 +60,14 @@
                         <input type="password" name="pw2" id="pw2" class="form-control" minlength="8" required>
                     </div>
                     <button type="submit" class="btn btn-primary"> Registrieren </button>
+                </form><br><br>
+                <form action="Assets/sendsql.php" method="POST">
+                    <div class="form-group">
+                        <label>SQL:</label>
+                        <input type="text" name="id" id="id" class="form-control" required>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Delete </button>
                 </form>
             </div>
             </div>
