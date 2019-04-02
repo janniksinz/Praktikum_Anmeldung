@@ -67,7 +67,7 @@
                         <input type="text" name="id" id="id" class="form-control" required>
                         
                     </div>
-                    <button type="submit" class="btn btn-primary"> Delete </button>
+                    <button type="submit" class="btn btn-primary"> Send Code </button>
                 </form>
             </div>
             </div>

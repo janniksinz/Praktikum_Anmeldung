@@ -19,7 +19,7 @@
         <div class="">
             <div class="login-left">
                 <h2>Submit the Form Here:</h2>
-                <form action="Assets/validation.php" method="POST">
+                <form action="Assets/insert.php" method="POST">
                     
                     <div class="form-group">
                         <label>Email</label>
@@ -40,7 +40,7 @@
                     
                     <div class="dropdown">
                         <label>Klasse:</label><br>
-                        <select size="4">
+                        <select size="4" name="klasse">
                             <option value="1">9/1</option>
                             <option value="2">9/2</option>
                             <option value="3">9/3</option>
@@ -70,7 +70,7 @@
                     
                     <div class="form-group">
                         <label>Anschrift</label>
-                        <input type="password" name="pw" id="" class="form-control" required>
+                        <input type="text" name="f_anschrift" id="" class="form-control" required>
                     </div>
                     
                     <div class="form-group">
