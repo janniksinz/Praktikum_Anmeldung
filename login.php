@@ -2,41 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Site</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/style/style2.css">
-    
+    <link rel="stylesheet" href="assets/style/stylelogin.css">
 </head>
-<body>
-   
-   
-   <!-- ----------------INCLUDE HEADER------------------- -->
-    <div><?php include_once "inc/header.php"; ?></div>
-   <!-- ----------------INCLUDE HEADER------------------- -->
-    <div class="container">
-       <div class="login-box">
-        <div class="">
-            <div class="login-left">
-                <h2>Login Here:</h2>
-                <form action="Assets/validation.php" method="POST">
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="pw" id="pw" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary"> Login </button>
-                </form>
-            </div>
-            
-
-            </div>
+<body data-vide-bg="ocean">
+   <?php
+    
+    session_start();
+    define('__CONFIG__', true);
+    define('__VALIDATION__', true);
+    
+    ?>
+<form action="validation.php" method="POST">
+    <div class="login-form">
+        <h2>Sign In</h2>
+        <div class="form-input">
+            <input type="text" name="email" placeholder="Email">
         </div>
+        
+        <div class="form-input">
+            <input type="Password" name="pw" placeholder="Password...">
+        </div>
+        
+        <div class="form-input">
+            <input type="submit" class="admin" name="submit" value="Login">
+        </div>
+        <a href="admin.php">Admin</a>
     </div>
-    <div id="admin-link">
-        <a href="admin.php" >Admin</a>
-    </div>
+    </form>
+    
+    
+    
+    
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.vide.js"></script>
+    
 </body>
 </html>
